@@ -10,8 +10,8 @@ const UserTable = ({ users }) => {
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Username</th>
-                    <th>Website</th>
+                    <th>Phone</th>
+                    <th>Company</th>
                 </tr>
             </thead>
             <tbody>
@@ -20,8 +20,8 @@ const UserTable = ({ users }) => {
                         <td>{user.id}</td>
                         <td>{user.name}</td>
                         <td>{user.email}</td>
-                        <td>{user.username}</td>
-                        <td>{user.website}</td>
+                        <td>{user.phone}</td>
+                        <td>{user.company.name}</td>
                     </tr>
                 ))
                 ) : (
