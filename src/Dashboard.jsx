@@ -1,27 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
+import { UserContext } from './UserContext';
+import CreateUser from './CreateUser';
 import UserTable from './UserTable';
 
 const Dashboard = () => {
-    const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-            .then((response) => response.json())
-            .then((data) => {
-                setUsers(data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.error('Error fetching users:', error);
-                setLoading(false);
-            });
-    }, []);
+    const { users } = useContext(UserContext);
 
     return (
-        <div>
-            <h1>User Dashboard</h1>
-            {loading ? <p>Loading users...</p> : <UserTable users={users} />}
+        <div style={{ padding: "20px" }}>
+            <h1 className="mb-4 text-center">User Dashboard</h1>
+            <CreateUser />
+            <UserTable users={users} />
         </div>
     );
 };

@@ -1,8 +1,11 @@
 import Dashboard from "./Dashboard";
+import { UserProvider } from "./UserContext";
 
 function App() {
   return (
-    <Dashboard />
+    <UserProvider>
+      <Dashboard />
+    </UserProvider>
   );
 }
 
