@@ -90,11 +90,6 @@ http://localhost:3000
     <Route path="/user/:id" element={<UserDetails />} />
 </Route>
 ```
----
-
-## 🤝 Contributing
-Pull requests are welcome!
-If you'd like to improve the UI or functionality, feel free to fork the repo.
 
 ---
 
@@ -120,6 +115,12 @@ If you'd like to improve the UI or functionality, feel free to fork the repo.
 - Add authentication (login/logout)
 - Improve UI with animations
 - Add export options (PDF)
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome!
+If you'd like to improve the UI or functionality, feel free to fork the repo.
 
 ---
 
