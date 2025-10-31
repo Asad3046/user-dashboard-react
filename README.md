@@ -81,15 +81,6 @@ npm start
 ```bash
 http://localhost:3000
 ```
----
-
-## Routing
-```jsx
-<Route>
-    <Route path="/" element={<Dashboard />} />
-    <Route path="/user/:id" element={<UserDetails />} />
-</Route>
-```
 
 ---
 
@@ -105,6 +96,16 @@ http://localhost:3000
         - UserTable.jsx
     - App.js
     - index.js
+
+---
+
+## Routing
+```jsx
+<Route>
+    <Route path="/" element={<Dashboard />} />
+    <Route path="/user/:id" element={<UserDetails />} />
+</Route>
+```
 
 ---
 
@@ -124,8 +125,8 @@ If you'd like to improve the UI or functionality, feel free to fork the repo.
 
 ---
 
-## ⭐ Like this project?
-Give it a ⭐ on GitHub!
+## ⭐ If you Like this project
+Give it a star on GitHub! ⭐
 
 
 
