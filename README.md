@@ -2,13 +2,13 @@
 
 A simple **React.js User Dashboard** project that demonstrates:
 
-Fetching Users from an API
-Adding new users using a form
-Global state using React Context
-Bootstrap UI components
-Search / Filter users
-User Detail page
-Navigation using React Router
+✅ Fetching Users from an API
+✅ Adding new users using a form
+✅ Global state using React Context
+✅ Bootstrap UI components
+✅ Search / Filter users
+✅ User Detail page
+✅ Navigation using React Router
 
 ---
 
