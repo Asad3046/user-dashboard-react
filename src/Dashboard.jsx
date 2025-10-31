@@ -7,10 +7,22 @@ const Dashboard = () => {
     const { users } = useContext(UserContext);
 
     return (
-        <div style={{ padding: "20px" }}>
-            <h1 className="mb-4 text-center">User Dashboard</h1>
-            <CreateUser />
-            <UserTable users={users} />
+        <div className="container py-4">
+            {/* Page Title */}
+            <div className="text-center mb-5">
+                <h1 className="display-5 fw-bold text-primary">User Dashboard</h1>
+                <p className="text-muted">Manage your users efficiently</p>
+            </div>
+
+            {/* Create User Form */}
+            <div className="mb-5">
+                <CreateUser />
+            </div>
+
+            {/* User List */}
+            <div>
+                <UserTable users={users} />
+            </div>
         </div>
     );
 };

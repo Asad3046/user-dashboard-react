@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const UserTable = ({ users }) => {
     const [searchTerm, setSearchTerm] = useState("");
+    const navigate = useNavigate();
 
     // Filter users by name
     const filteredUsers = users.filter(user => 
@@ -33,9 +35,14 @@ const UserTable = ({ users }) => {
             <div className="row">
                 {filteredUsers.map((user) => (
                     <div className="col-md-4 mb-4" key={user.id}>
-                        <div className="card shadow-sm h-100">
+
+                        <div className="card shadow-sm h-100"
+                            style={{ cursor: "pointer" }}
+                            onClick={() => navigate(`/user/${user.id}`)}
+                        >
                             <div className="card-body">
                                 <h5 className="card-title text-primary">{user.name}</h5>
+
                                 <p className="card-text mb-1">
                                     <strong>ID:</strong> {user.id}
                                 </p>

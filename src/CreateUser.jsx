@@ -7,7 +7,10 @@ const CreateUser = () => {
         name: '',
         email: '',
         phone: '',
-        company: { name: '' },
+        company: { name: '', catchPhrase: '', bs: '' },
+        username: '',
+        website: '',
+        address: { street: '', suite: '', city: '', zipcode: '', geo: { lat: '', lng: '' } }
     });
 
     const handleChange = (e) => {
