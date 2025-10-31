@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Dashboard from "./Dashboard";
-import UserDetails from "./UserDetails";
-import { UserProvider } from "./UserContext";
+import Dashboard from "./components/Dashboard";
+import UserDetails from "./pages/UserDetails";
+import { UserProvider } from "./contexts/UserContext";
 
 function App() {
   return (

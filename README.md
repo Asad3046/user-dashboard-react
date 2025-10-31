@@ -44,6 +44,8 @@ Includes:
 - Context API
 - Bootstrap 5
 
+---
+
 ## 📸 Screenshots
 
 ### Dashboard
@@ -55,15 +57,76 @@ Includes:
 ### User Details
 ![User Details](screenshots/user-details.png)
 
+---
+
 ## 📦 Installation
 
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Asad3046/user-dashboard-react.git
-cd user-dashboard-react
+cd user-dashboard-react 
+```
 
 ### 2️⃣ Install dependencies
+```bash
 npm install
+```
+
+### 3️⃣ Run the development server
+```bash
+npm start
+```
+
+### Visit
+```bash
+http://localhost:3000
+```
+---
+
+## Routing
+```jsx
+<Route>
+    <Route path="/" element={<Dashboard />} />
+    <Route path="/user/:id" element={<UserDetails />} />
+</Route>
+```
+---
+
+## 🤝 Contributing
+Pull requests are welcome!
+If you'd like to improve the UI or functionality, feel free to fork the repo.
+
+---
+
+## 📁 Project Structure
+- src/
+    - components/
+        - Dashboard.jsx
+    - contexs/
+        - UserContext.jsx
+    - pages/
+        - CreateUser.jsx
+        - UserDetails.jsx
+        - UserTable.jsx
+    - App.js
+    - index.js
+
+---
+
+## 🔮 Future Work
+- Add edit user functionality
+- Add delete user functionality
+- Integrate real backend API
+- Add authentication (login/logout)
+- Improve UI with animations
+- Add export options (PDF)
+
+---
+
+## ⭐ Like this project?
+Give it a ⭐ on GitHub!
+
+
 
 
 

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { UserContext } from './UserContext';
-import CreateUser from './CreateUser';
-import UserTable from './UserTable';
+import { UserContext } from '../contexts/UserContext';
+import CreateUser from "../pages/CreateUser";
+import UserTable from "../pages/UserTable";
 
 const Dashboard = () => {
     const { users } = useContext(UserContext);
