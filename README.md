@@ -116,6 +116,7 @@ http://localhost:3000
 - Add authentication (login/logout)
 - Improve UI with animations
 - Add export options (PDF)
+- Add dark & light theme toggle
 
 ---
 
