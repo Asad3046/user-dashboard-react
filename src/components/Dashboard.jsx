@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../contexts/UserContext';
+import { UserContext } from '../utils/UserContext';
 import CreateUser from "../pages/CreateUser";
 import UserTable from "../pages/UserTable";
 
